@@ -14,7 +14,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("studentviews/sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("profviews/mainlogin.fxml"));
         this.primaryStage.setTitle("App");
         this.primaryStage.setScene(new Scene(root, 640, 480));
         this.primaryStage.show();

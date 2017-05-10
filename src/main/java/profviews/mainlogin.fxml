@@ -8,19 +8,13 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.studentviews.StudentController">
    <children>
-      <Button layoutX="221.0" layoutY="77.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="158.0" text="Тренировочная серия" />
-      <Button layoutX="221.0" layoutY="170.0" mnemonicParsing="false" onAction="#goToTest" prefHeight="61.0" prefWidth="158.0" text="Проведение опыта" />
-      <Button fx:id="backButton" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#backToInfo" text="Назад" />
-      <MenuBar layoutX="-3.0" layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Button layoutX="218.0" layoutY="127.0" mnemonicParsing="false" onAction="#goToStudentLogin" prefHeight="42.0" prefWidth="165.0" text="Войти как студент" />
+      <Button layoutX="218.0" layoutY="233.0" mnemonicParsing="false" onAction="#goToProfLogin" prefHeight="42.0" prefWidth="165.0" text="Войти как преподаватель" />
+      <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
               <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">

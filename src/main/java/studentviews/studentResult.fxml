@@ -11,8 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.studentviews.TestController">
    <children>
       <GridPane layoutX="90.0" layoutY="87.0" prefHeight="227.0" prefWidth="421.0">
         <columnConstraints>
@@ -48,7 +47,7 @@
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="7" />
          </children>
       </GridPane>
-      <Button layoutX="447.0" layoutY="325.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="129.0" text="Сохранить и выйти" />
+      <Button layoutX="447.0" layoutY="325.0" mnemonicParsing="false" onAction="#saveAndExit" prefHeight="46.0" prefWidth="129.0" text="Сохранить и выйти" />
       <MenuBar layoutX="8.0" layoutY="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">

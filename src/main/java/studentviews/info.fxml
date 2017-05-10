@@ -11,14 +11,13 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.studentviews.StudentController">
    <children>
-      <TextArea fx:id="textInfo" layoutX="34.0" layoutY="100.0" prefHeight="200.0" prefWidth="530.0" text="textInfo" />
+      <TextArea fx:id="textInfo" layoutX="34.0" layoutY="100.0" prefHeight="200.0" prefWidth="530.0" text="На экране дисплея Вам будут предъявлены N  наборов символов (букв русского алфавита), состоящих из 100 знаков.&#10; Ваша задача – просматривая слева направо каждую строку предъявляемого набора,  отмечать  буквы &quot;р&quot; и &quot;к&quot;. При этом периодически на экране появляется специальный сигнал, по предъявлению которого пользователь должен отметить текущий символ. Время от времени на экране будут появляться помехи. По завершении опыта Вам будут предъявлены результаты.&#10;&#10;" wrapText="true" />
       <Text layoutX="228.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Описание опыта">
          <font>
             <Font size="19.0" />
          </font>
       </Text>
       <Button fx:id="nextButton" layoutX="512.0" layoutY="344.0" mnemonicParsing="false" onAction="#nextToMenu" text="Далее" />
-      <Button layoutX="34.0" layoutY="344.0" mnemonicParsing="false" text="Назад" />
       <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">

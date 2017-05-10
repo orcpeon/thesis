@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.studentviews.TestController">
+   <children>
+      <GridPane fx:id="gridFirst" layoutX="140.0" layoutY="62.0" prefHeight="297.0" prefWidth="340.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btnc" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="37.0" prefWidth="40.0" text="Щ" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="btnd" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="О" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Button fx:id="btna" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="32.0" prefWidth="40.0" text="Ф" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+            <Button fx:id="btnd2" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ф" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btnd3" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="О" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="btnd5" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="О" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="btnd6" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="К" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Button fx:id="btnd7" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Р" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Button fx:id="btnd8" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Я" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <Button fx:id="btnd9" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ы" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+            <Button fx:id="btnd10" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Б" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+            <Button fx:id="btnd11" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="О" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Button fx:id="btnd13" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="З" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button fx:id="btnd15" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ч" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+            <Button fx:id="btnd17" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="О" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btnd18" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Г" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="btnd19" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Р" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="btnd20" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Н" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="btnd21" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="У" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Button fx:id="btnd22" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Р" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+            <Button fx:id="btnd23" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="К" GridPane.rowIndex="5" />
+            <Button fx:id="btnd24" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ж" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="btnd25" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ш" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Button fx:id="btnd26" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Е" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button fx:id="btnd27" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="К" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Button fx:id="btnd28" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="К" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Button fx:id="btnd29" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Э" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Button fx:id="btnd30" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Л" GridPane.rowIndex="1" />
+            <Button fx:id="btnd31" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ц" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="btnd32" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Й" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button fx:id="btnd33" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Н" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Button fx:id="btnd34" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Н" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Button fx:id="btnd35" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="В" GridPane.rowIndex="4" />
+            <Button fx:id="btnd36" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="З" GridPane.rowIndex="6" />
+            <Button fx:id="btnd37" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="С" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Button fx:id="btnd38" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="О" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Button fx:id="btnd39" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Н" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <Button fx:id="btnd40" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Д" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+            <Button fx:id="btnd41" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Г" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <Button fx:id="btnd42" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Т" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Button fx:id="btnd43" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="М" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+            <Button fx:id="btnd44" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ч" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Button fx:id="btnd45" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="О" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Button fx:id="btnd46" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Й" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+            <Button fx:id="btnd47" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="К" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <Button fx:id="btnd48" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Р" />
+            <Button fx:id="btnd49" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Р" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Button fx:id="btnd50" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Я" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Button fx:id="btnd51" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Р" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Button fx:id="btnd52" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="В" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <Button fx:id="btnd53" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="И" GridPane.rowIndex="8" />
+            <Button fx:id="btnd54" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ы" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <Button fx:id="btnd55" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Е" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <Button fx:id="btnd56" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Р" GridPane.rowIndex="2" />
+            <Button fx:id="btnd57" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Д" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Button fx:id="btnd58" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="К" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Button fx:id="btnd59" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ф" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+            <Button fx:id="btnd60" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="К" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+            <Button fx:id="btnd61" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Н" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Button fx:id="btnd62" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Н" GridPane.columnIndex="3" />
+            <Button fx:id="btnd63" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="П" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Button fx:id="btnd64" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="М" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Button fx:id="btnd65" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Р" GridPane.columnIndex="8" />
+            <Button fx:id="btnd66" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Г" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+            <Button fx:id="btnd67" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Г" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+            <Button fx:id="btnd68" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="В" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+            <Button fx:id="btnd69" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Д" GridPane.rowIndex="7" />
+            <Button fx:id="btnd70" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ю" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+            <Button fx:id="btnd71" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Е" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Button fx:id="btnd72" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ч" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <Button fx:id="btnd73" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ю" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+            <Button fx:id="btnd74" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Р" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Button fx:id="btnd75" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="К" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+            <Button fx:id="btnd76" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="О" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+            <Button fx:id="btnd78" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Е" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button fx:id="btnd79" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Б" GridPane.columnIndex="2" />
+            <Button fx:id="btnd80" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Г" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btnd81" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="А" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <Button fx:id="btnd82" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="К" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Button fx:id="btnd83" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ж" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Button fx:id="btnd84" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ю" GridPane.rowIndex="9" />
+            <Button fx:id="btnd85" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Б" GridPane.rowIndex="3" />
+            <Button fx:id="btnd87" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="М" GridPane.columnIndex="6" />
+            <Button fx:id="btnd88" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="У" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="btnd89" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Д" GridPane.columnIndex="5" />
+            <Button fx:id="btnd90" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Й" GridPane.columnIndex="4" />
+            <Button fx:id="btnd91" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ч" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button fx:id="btnd92" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="П" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="btnd93" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ы" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="btnd94" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Х" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="btnd95" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Р" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button fx:id="btnd96" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="В" GridPane.columnIndex="1" />
+            <Button fx:id="btnd97" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="М" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+            <Button fx:id="btnd4" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ч" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Button fx:id="btnd16" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Я" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Button fx:id="btnd86" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Л" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Button fx:id="btnd14" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Э" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button fx:id="btnd77" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Л" GridPane.columnIndex="7" />
+            <Button fx:id="btnd1" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Ш" GridPane.columnIndex="9" />
+            <Button fx:id="btnd12" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="33.0" prefWidth="43.0" text="Й" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <Button layoutX="499.0" layoutY="185.0" mnemonicParsing="false" onAction="#finishTest" prefHeight="50.0" prefWidth="97.0" text="Закончить">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <MenuBar layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Text layoutX="253.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="113.13671875" />
+      <Text layoutX="60.0" layoutY="92.0" scaleX="3.0" scaleY="3.0" scaleZ="3.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="536.0" layoutY="92.0" scaleX="3.0" scaleY="3.0" scaleZ="3.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>
