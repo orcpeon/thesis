@@ -12,6 +12,7 @@ import main.java.StageSingleton;
 import main.java.business.Settings;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 //TODO ADD USERBASE
@@ -33,11 +34,17 @@ public class ProfController {
         }
     }
 
-    //TODO ADD ACTUAL SAVING
-    //TODO FIX FORMAT EXCEPTION
+
     public void saveSettings(ActionEvent e) {
-        int newAmount = Integer.parseInt(amountField.getText());
-        int newInterval = Integer.parseInt(interval.getText());
+        int newAmount = Settings.getAmount();
+        int newInterval = Settings.getInterval();
+
+        try {
+            newAmount = Integer.parseInt(amountField.getText());
+            newInterval = Integer.parseInt(interval.getText());
+        } catch (NumberFormatException nfe) {
+            System.out.println("Field is empty");
+        }
 
         System.out.println(Settings.getAmount() + " " + Settings.getInterval());  //del
         if (newAmount>=1 && newAmount<=5) {
@@ -47,11 +54,25 @@ public class ProfController {
             Settings.setInterval(newInterval);
         }
         System.out.println(Settings.getAmount() + " " + Settings.getInterval());  //del
+
+        try {
+            FileWriter fw = new FileWriter(new File("/C:/Issledovanie/sets.xml"));
+            String toWrite = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+                    "<settings>\n" +
+                    "    <amount>" +Settings.getAmount()+ "</amount>\n" +
+                    "    <interval>" + Settings.getInterval() + "</interval>\n" +
+                    "</settings>";
+            fw.write(toWrite);
+            fw.close();
+        } catch (Exception e1) {
+            System.out.println("Error saving settings");
+        }
         changeScene("/main/java/profviews/profmain.fxml");
     }
 
     public void openSettings(ActionEvent e) {
         changeScene("/main/java/profviews/profsettings.fxml");
+        amountField = new TextField();
         amountField.setText(String.valueOf(Settings.getAmount()));
         interval.setText(String.valueOf(Settings.getInterval()));
     }
@@ -61,10 +82,15 @@ public class ProfController {
     }
 
     public void openUserbase(ActionEvent e) {
-        FileChooser fc = new FileChooser();
-        fc.setInitialDirectory(new File(System.getProperty("user.home")));
-        fc.showOpenDialog(stage);
-        changeScene("/main/java/profviews/profuserbase.fxml");
+//        FileChooser fc = new FileChooser();
+//        fc.setInitialDirectory(new File("src/main/java/data"));
+//        fc.showOpenDialog(stage);
+        try {
+            Runtime.getRuntime().exec("explorer.exe /select," + "C:\\Issledovanie\\results\\");
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+        //changeScene("/main/java/profviews/profuserbase.fxml");
     }
 
     private void changeScene(String location) {
@@ -75,4 +101,5 @@ public class ProfController {
             e.printStackTrace();
         }
     }
+
 }

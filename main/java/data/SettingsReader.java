@@ -14,6 +14,7 @@ import org.xml.sax.SAXException;
 import java.io.File;
 import java.io.File;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class SettingsReader {
 
@@ -21,7 +22,7 @@ public class SettingsReader {
 
     public void read() {
         try {
-            File file = new File("src/main/java/data/sets.xml");
+            File file = new File("/C:/Issledovanie/sets.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(file);
@@ -41,13 +42,15 @@ public class SettingsReader {
 
                     Settings.setInterval(Integer.parseInt(eElement.getElementsByTagName("amount").item(0).getTextContent()));
                     Settings.setAmount(Integer.parseInt(eElement.getElementsByTagName("interval").item(0).getTextContent()));
-                    System.out.println("Interval: " + eElement.getElementsByTagName("amount").item(0).getTextContent());
+                    System.out.println("Amount: " + eElement.getElementsByTagName("amount").item(0).getTextContent());
                     System.out.println("Interval: " + eElement.getElementsByTagName("interval").item(0).getTextContent());
 
                 }
             }
 
-
+            Scanner sc = new Scanner(new File("/C:/Issledovanie/info.txt"));
+            String in = sc.nextLine();
+            Settings.setInfo(in);
         } catch (Exception e) {
             System.out.println("wrong");
             e.printStackTrace();

@@ -16,6 +16,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import main.java.StageSingleton;
 import main.java.business.Student;
+import main.java.data.ResultWriter;
 
 import javax.xml.soap.Text;
 import java.io.IOException;
@@ -90,7 +91,7 @@ public class TestController {
         System.out.println(cAcc);
     }
 
-    //TODO SAVE TO XML
+    //TODO SAVE
     public void saveAndExit(ActionEvent e) {
 
         System.out.println("Done");
@@ -98,8 +99,7 @@ public class TestController {
         student.setMissedSymbols(missed);
         student.setWrongSymbols(wrong);
 
-        //calc = new Calculator(student);
-        student.setTime(2);
+        student.setTime(3);
         calculateAcc(student);
         calculateConcCoef(student);
         calculatSustain(student);
@@ -110,6 +110,13 @@ public class TestController {
         System.out.println("Total: " + student.getSymbolsFound());
         System.out.println("Missed: " + student.getMissedSymbols());
         System.out.println("Wrong: " + student.getWrongSymbols());
+        ResultWriter rw = new ResultWriter();
+        try {
+            rw.writeResult(student, Double.parseDouble(coef.getText()), Double.parseDouble(conc.getText()));
+        } catch (IOException ioe) {
+            System.out.println("IOE");
+            ioe.printStackTrace();
+        }
         Platform.exit();
     }
 
@@ -125,11 +132,11 @@ public class TestController {
         updateStudent(15);
         changeScene("/main/java/studentviews/testsecond.fxml");
         Timeline pomeha = new Timeline(new KeyFrame(Duration.seconds(5), event -> {
-            System.out.println("this is called every 5 seconds on UI thread");
+            //System.out.println("ebal tvoy rot");
             pom1.setText("LMAO");
             System.out.println(pom1.getText());
         }));
-        pomeha.setCycleCount(Timeline.INDEFINITE);
+        pomeha.setCycleCount(10);
         pomeha.play();
     }
 
@@ -156,7 +163,6 @@ public class TestController {
     }
 
     public void showResult(ActionEvent e) {
-        System.out.println(cAcc);
         coef.setText(String.valueOf(student.getAccCoefFirst()));
         conc.setText(String.valueOf(student.getConcCoefFirst()));
         found.setText(String.valueOf(total));
@@ -178,27 +184,24 @@ public class TestController {
     }
 
     public void endTraining(ActionEvent e) {
-        changeScene("/main/java/studentviews/studentmain.fxml");
+        changeScene("/main/java/studentviews/studentmenu.fxml");
     }
 
 
     public void calculateAcc(Student student) {
         double result = ((student.getSymbolsFound() / 10) * (student.getSymbolsFound() / 10)) /
                 (student.getWrongSymbols() + student.getMissedSymbols());
-        System.out.println(result);
         student.setAccCoefFirst(result);
     }
 
     public void calculateConcCoef(Student student) {
         double result = (student.getSymbolsFound() - student.getWrongSymbols()) /
                 (student.getSymbolsFound() + student.getMissedSymbols());
-        System.out.println(result);
         student.setConcCoefFirst(result);
     }
 
     public void calculatSustain(Student student) {
         double result = (student.getSymbolsChecked() / student.getTime());
-        student.setSustainability(result);
         System.out.println(result);
     }
 
